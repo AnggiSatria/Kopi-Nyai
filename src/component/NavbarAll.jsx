@@ -3,8 +3,17 @@ import IMG from "../Assets/Nyai.jpg";
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import Rating from '@mui/material/Rating';
+import Box from '@mui/material/Box';
+import StarIcon from '@mui/icons-material/Star';
+import Login from "./Login";
 
 function NavbarAll() {
+
+  const [click, setClick] = React.useState(false);
+
+  const handleClick = () => setClick(true);
+
   return (
     <div>
         <Navbar bg="dark" variant="dark" sticky="top">
@@ -14,9 +23,9 @@ function NavbarAll() {
         
         <div className="right" style={{display : "flex", justifyContent : "flex-end", flex : "50%"}}>
           <Nav className="me-auto" style={{width : "100%", justifyContent : "space-evenly"}}>
-            <Nav.Link href="#home" style={{marginRight : "20px"}}>Home</Nav.Link>
-            <Nav.Link href="#features" style={{marginRight : "20px"}}>About</Nav.Link>
-            <Nav.Link href="#pricing" style={{marginRight : "20px"}}>FAQ</Nav.Link>
+            <Nav.Link href="/" style={{marginRight : "20px"}}>Home</Nav.Link>
+            <Nav.Link href="/about" style={{marginRight : "20px"}}>About</Nav.Link>
+            <Nav.Link href="/faq" style={{marginRight : "20px"}}>FAQ</Nav.Link>
           </Nav>
         </div>
 
