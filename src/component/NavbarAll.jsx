@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 function NavbarAll() {
   return (
     <div>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" sticky="top">
         <div className="left" style={{display : "flex", flex : "25%", marginLeft : "50px"}}>
           <Navbar.Brand href="#home"><img src={IMG} alt="" style={{width : "80px", borderRadius: "5px"}}/></Navbar.Brand>
         </div>

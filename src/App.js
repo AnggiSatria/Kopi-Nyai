@@ -5,6 +5,9 @@ import Career from "./pages/Career";
 import Faq from "./pages/Faq";
 import BuyProduct from "./pages/BuyProduct";
 import Login from "./component/Login";
+import NavbarAdmin from "./component/NavbarAdmin";
+import NavbarAll from "./component/NavbarAll";
+import NavbarUser from "./component/NavbarUser";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path="/career" element={<Career/>}/>
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/navbar-admin" element={<NavbarAdmin/>}/>
+        <Route path="/navbar" element={<NavbarAll/>}/>
+        <Route path="/navbar-user" element={<NavbarUser/>}/>
       </Routes>
     </Router>
   );

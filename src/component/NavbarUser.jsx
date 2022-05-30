@@ -8,7 +8,7 @@ import { deepOrange } from '@mui/material/colors';
 function NavbarUser () {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" style={{display : "flex", justifyContent : "space-between"}}>
+      <Navbar bg="dark" sticky="top" variant="dark" style={{display : "flex", justifyContent : "space-between"}}>
         <div className="left" style={{display : "flex", marginLeft : "50px"}}>
           <Navbar.Brand href="#home"><img src={IMG} alt="" style={{width : "80px", borderRadius: "5px"}}/></Navbar.Brand>
         </div>
